@@ -1,0 +1,131 @@
+{
+    "CAMPPLUS_VOX": {
+        "obj": "speakerlab.models.campplus.DTDNN.CAMPPlus",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 512
+        }
+    },
+    "CAMPPLUS_COMMON": {
+        "obj": "speakerlab.models.campplus.DTDNN.CAMPPlus",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 192
+        }
+    },
+    "ERes2Net_VOX": {
+        "obj": "speakerlab.models.eres2net.ERes2Net.ERes2Net",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 192
+        }
+    },
+    "ERes2NetV2_COMMON": {
+        "obj": "speakerlab.models.eres2net.ERes2NetV2.ERes2NetV2",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 192
+        }
+    },
+    "ERes2Net_COMMON": {
+        "obj": "speakerlab.models.eres2net.ERes2Net_huge.ERes2Net",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 192
+        }
+    },
+    "ERes2Net_base_COMMON": {
+        "obj": "speakerlab.models.eres2net.ERes2Net.ERes2Net",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 512,
+            "m_channels": 32
+        }
+    },
+    "ERes2Net_Base_3D_Speaker": {
+        "obj": "speakerlab.models.eres2net.ERes2Net.ERes2Net",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 512,
+            "m_channels": 32
+        }
+    },
+    "ERes2Net_Large_3D_Speaker": {
+        "obj": "speakerlab.models.eres2net.ERes2Net.ERes2Net",
+        "args": {
+            "feat_dim": 80,
+            "embedding_size": 512,
+            "m_channels": 64
+        }
+    },
+    "EPACA_CNCeleb": {
+        "obj": "speakerlab.models.ecapa_tdnn.ECAPA_TDNN.ECAPA_TDNN",
+        "args": {
+            "input_size": 80,
+            "lin_neurons": 192,
+            "channels": [1024, 1024, 1024, 1024, 3072]
+        }
+    },
+    "supports": {
+        "iic/speech_campplus_sv_zh-cn_16k-common": {
+            "revision": "v1.0.0",
+            "model": "CAMPPLUS_COMMON",
+            "model_pt": "campplus_cn_common.bin"
+        },
+        "iic/speech_eres2net_sv_zh-cn_16k-common": {
+            "revision": "v1.0.5",
+            "model": "ERes2Net_COMMON",
+            "model_pt": "pretrained_eres2net_aug.ckpt"
+        },
+        "iic/speech_eres2netv2_sv_zh-cn_16k-common": {
+            "revision": "v1.0.1",
+            "model": "ERes2NetV2_COMMON",
+            "model_pt": "pretrained_eres2netv2.ckpt"
+        },
+        "iic/speech_eres2net_base_200k_sv_zh-cn_16k-common": {
+            "revision": "v1.0.0",
+            "model": "ERes2Net_base_COMMON",
+            "model_pt": "pretrained_eres2net.pt"
+        },
+        "iic/speech_campplus_sv_zh_en_16k-common_advanced": {
+            "revision": "v1.0.0",
+            "model": "CAMPPLUS_COMMON",
+            "model_pt": "campplus_cn_en_common.pt"
+        },
+        "iic/speech_campplus_sv_en_voxceleb_16k": {
+            "revision": "v1.0.2",
+            "model": "CAMPPLUS_VOX",
+            "model_pt": "campplus_voxceleb.bin"
+        },
+        "iic/speech_eres2net_sv_en_voxceleb_16k": {
+            "revision": "v1.0.2",
+            "model": "ERes2Net_VOX",
+            "model_pt": "pretrained_eres2net.ckpt"
+        },
+        "iic/speech_eres2net_base_sv_zh-cn_3dspeaker_16k": {
+            "revision": "v1.0.1",
+            "model": "ERes2Net_Base_3D_Speaker",
+            "model_pt": "eres2net_base_model.ckpt"
+        },
+        "iic/speech_eres2net_large_sv_zh-cn_3dspeaker_16k": {
+            "revision": "v1.0.0",
+            "model": "ERes2Net_Large_3D_Speaker",
+            "model_pt": "eres2net_large_model.ckpt"
+        },
+        "iic/speech_ecapa-tdnn_sv_zh-cn_cnceleb_16k": {
+            "revision": "v1.0.0",
+            "model": "EPACA_CNCeleb",
+            "model_pt": "ecapa-tdnn.ckpt"
+        },
+        "iic/speech_ecapa-tdnn_sv_zh-cn_3dspeaker_16k": {
+            "revision": "v1.0.0",
+            "model": "EPACA_CNCeleb",
+            "model_pt": "ecapa-tdnn.ckpt"
+        },
+        "iic/speech_ecapa-tdnn_sv_en_voxceleb_16k": {
+            "revision": "v1.0.1",
+            "model": "EPACA_CNCeleb",
+            "model_pt": "ecapa_tdnn.bin"
+        }
+    }
+}
