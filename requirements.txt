@@ -1,0 +1,9 @@
+#wave
+librosa
+gradio
+argparse
+numpy
+torchaudio
+torch
+pyaml
+multiprocessing-logging
