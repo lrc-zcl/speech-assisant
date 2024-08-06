@@ -5,4 +5,6 @@
 </p>
 
 #  <p align="center">Star history</p>
-https://star-history.com/#lrc-zcl/speech-assisant&Date
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lrc-zcl/speech-assisant&type=Timeline)](https://star-history.com/#lrc-zcl/speech-assisant&Timeline)
